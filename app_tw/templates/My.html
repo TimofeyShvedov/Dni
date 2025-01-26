@@ -1,0 +1,34 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link   rel="stylesheet" href="{% static 'css/None.css' %}">
+</head>
+<body>
+
+
+{%for i in Zapisi%}
+
+
+
+    <div>
+        <a class="ab">{{i.username}}</a>
+        <img src="{{i.photo.url }}">
+        <p>{{i.unique}}</p>
+        <p>{{i.mainer}}</p>
+        <p>{{i.gameplay}}</p>
+        <p>{{i.comp}}</p>
+        <p>{{i.team_dbd}}</p>
+        <p>{{i.url_tw}}</p>
+        <p>{{i.followers}}</p>
+
+
+    </div>
+{%endfor%}
+
+</body>
+</html>
+
+<!--Доделать страницу олл_стримеры. Сделать надписи разного цвета, сделать рамки, закругления + закругление картинок, изменить цвет фона сайта. В общем - сделать всё, что можно в май.хтмл + Ноне.ЦСС-->
