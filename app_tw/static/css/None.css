@@ -1,17 +1,53 @@
 body{
     background-color:rgb(168, 10, 171);
+    background-image: url("/static/galereya/category-twitch-bg.jpg");
 
 
 }
-div{
+
+div.streamer{
+    background-color:rgb(168, 10, 171);
+
     border: solid;
     font-size:50px;
     width:40%;
+    padding:20px ;
 }
+
 .ab{
-    color:rgb(237,29,29);
+    color:rgb(0,0,0);
+    font-size: 80px;
+    font-family: "Pangolin", serif;
 
 }
+
+.a{
+   font-family: "Rubik Mono One", serif;
+   font-size: 30px;
+}
+
 img{
-width:15%;
+    width:15%;
+    border-radius: 50%;
+}
+
+div.streamers{
+    width:30%;
+    height:30%;
+    position: absolute;
+}
+
+div.streamer:hover{
+    background-color:rgb(150, 29, 161);
+    box-shadow: 10px 10px 100px pink;
+}
+
+
+.followers {    /* сделать анимацию тут */
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "Pangolin", serif;
 }

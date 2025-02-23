@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link   rel="stylesheet" href="{% static 'css/None.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 
@@ -13,20 +16,39 @@
 
 
 
-    <div>
-        <a class="ab">{{i.username}}</a>
+    <div class="streamer">
         <img src="{{i.photo.url }}">
-        <p>{{i.unique}}</p>
-        <p>{{i.mainer}}</p>
-        <p>{{i.gameplay}}</p>
-        <p>{{i.comp}}</p>
-        <p>{{i.team_dbd}}</p>
-        <p>{{i.url_tw}}</p>
-        <p>{{i.followers}}</p>
+        <a class="ab">{{i.username}}</a>
+        {%if i.unique == "-"%}
+
+        {%else%}
+        <p class="a">{{i.unique}}</p>
+        {%endif%}
+        <p class="a">{{i.mainer}}</p>
+        <p class="a">{{i.gameplay}}</p>
+        {%if i.comp == "-"%}
+
+        {%else%}
+            <p class="a">{{i.comp}}</p>
+        {%endif%}
+        {%if i.team_dbd == "-"%}
+
+        {%else%}
+        <p class="a">{{i.team_dbd}}</p>
+        {%endif%}
+        <p class="a">
+            <a href="{{i.url_tw}}">{{i.url_tw}}</a>
+        </p>
+
+        <p class="followers">{{i.followers}} <k>фолловеров</k></a></p>
 
 
     </div>
+
 {%endfor%}
+    <div class="streamers">
+
+    </div>
 
 </body>
 </html>
