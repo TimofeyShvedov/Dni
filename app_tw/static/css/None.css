@@ -32,9 +32,13 @@ img{
 }
 
 div.streamers{
-    width:30%;
-    height:30%;
-    position: absolute;
+    width:15%;
+    height:190%;
+    position: fixed;
+    right:0;
+    margin-left: 0px;
+    background-color:rgb(214,41,240);
+
 }
 
 div.streamer:hover{
@@ -50,4 +54,13 @@ div.streamer:hover{
     font-size: 40px;
     line-height: 40px;
     font-family: "Pangolin", serif;
+}
+div.streamers p {
+margin-left: 50px;
+font-size: 50px;
+
+}
+
+div.streamers a {
+    font-size: 30px;
 }

@@ -11,14 +11,40 @@
 
 <body>
 
-
+ <div class="streamers">
+     <p><a >Команда Elysium</a></p>
+     <ul>
+         <li><a href="#XenoDBD">XenoDBD</a></li>
+     </ul>
+     <p><a>Команда Eternal</a></p>
+     <ul>
+         <li><a href="#KnightLight">KnightLight</a></li>
+     </ul>
+     <p><a>Команда Petroleum</a></p>
+     <ul>
+         <li><a href="#MomoSeventh">MomoSeventh</a></li>
+     </ul>
+     <p><a>Самый популярный стример</a></p>
+     <ul>
+         <li><a href="#Otzdarva">Otzdarva</a></li>
+     </ul>
+     <p><a>Мейнер Мора</a></p>
+     <ul>
+         <li><a href="#LilithOmen">LilithOmen</a></li>
+     </ul>
+     <p><a>Мейнер Они</a></p>
+     <ul>
+         <li><a href="#Meydix">Meydix</a></li>
+     </ul>
+    </div>
 {%for i in Zapisi%}
 
 
 
-    <div class="streamer">
+    <div id="{{i.username}}" class="streamer">
+
         <img src="{{i.photo.url }}">
-        <a class="ab">{{i.username}}</a>
+        <a class="ab" >{{i.username}}</a>
         {%if i.unique == "-"%}
 
         {%else%}
@@ -41,14 +67,41 @@
         </p>
 
         <p class="followers">{{i.followers}} <k>фолловеров</k></a></p>
-
+        
 
     </div>
 
 {%endfor%}
-    <div class="streamers">
+<button onclick="test()">нажать</button>
 
-    </div>
+<p id="kk">gg</p>
+<script>
+    // alert("привет");
+    // console.log("poka");
+    // let ima = "Xeno"
+    // console.log(ima);
+    // prompt("j");
+    // confirm("h")
+
+    // if (5>6){
+    //     console.log("gkh")
+    // }
+    // else{
+    //     console.log(";g;a")
+    // }
+    // for (let x=3;x<23;x++){
+    //     console.log("gg")
+    // }
+    function test(){
+        document.getElementById("kk").innerText="notgg"
+        
+    }
+
+    // просто создать переменную (это будет число) и просто зарандомить случайное число от 1 до 100, а затем его в консоль.лог закинуть, чтобы убедиться, что число реально меняется
+    // спросить у дипсика как это делать, а также кратко и информативно объяснить, указав, что ты не знаешь джаваскрипт, но знаешь пайтон, поэтому также дополнять примеры, как бы этот код выглядел на пайтоне
+    // если всё будет окей, то попытаться сделать так, чтобы это число рандомилось каждые 10 секунд
+   
+</script>
 
 </body>
 </html>
